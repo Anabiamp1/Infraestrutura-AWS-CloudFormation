@@ -1,1 +1,30 @@
+## Comandos AWS CLI Utilizados
 
+- Criar stack:
+
+aws cloudformation create-stack --stack-name StackS3EC2 --template-body file://C:/Users/anabe/Desktop/dio/template.yaml --parameters ParameterKey=InstanceType,ParameterValue=t2.micro --capabilities CAPABILITY_NAMED_IAM --region us-east-1
+
+
+- Verificar status da stack:
+
+aws cloudformation describe-stacks --stack-name StackS3EC2 --region us-east-1 --query "Stacks[0].StackStatus"
+
+
+- Listar eventos da stack:
+
+aws cloudformation describe-stack-events --stack-name StackS3EC2 --region us-east-1 --output table
+
+
+- Listar instâncias EC2 criadas:
+
+aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,State.Name,KeyName,PublicIpAddress]" --output table
+
+
+- Autorizar acesso SSH no Security Group:
+
+aws ec2 authorize-security-group-ingress --group-id sg-04b7526516ce3ccee --protocol tcp --port 22 --cidr 0.0.0.0/0
+
+
+- Conectar à instância EC2 via SSH:
+
+ssh -i "C:/Users/anabe/Desktop/dio/minha-nova-chave.pem" ec2-user@<PublicIpAddress>
