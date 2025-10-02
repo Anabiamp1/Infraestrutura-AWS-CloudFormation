@@ -14,7 +14,7 @@ Este repositório contém a prática do laboratório sobre AWS CloudFormation, c
 - `insights.md` → Reflexões e aprendizados
 - `erros-e-solucoes.md` → Registro de erros encontrados
 
---
+---
 
 ## 🎯 Objetivo
 Praticar a criação de infraestrutura como código na AWS utilizando CloudFormation.
