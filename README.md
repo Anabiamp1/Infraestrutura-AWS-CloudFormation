@@ -9,12 +9,22 @@ Este repositório contém a prática do laboratório sobre AWS CloudFormation, c
 
 ## 📁 Estrutura
 
-- `template.yaml` → Template usado para a stack
-- `comandos.md` → Passo a passo com comandos
-- `insights.md` → Reflexões e aprendizados
-- `erros-e-solucoes.md` → Registro de erros encontrados
+- [comandos](./comandos/comds) → Comandos utilizados na criação da stack
+- [images](./images) → Imagens dos estudos e prática
+- [templates](./templates/template) → Template YAML de exemplo para recursos AWS
+- [insights](./insights/Documentacao) → Reflexões, aprendizados e registro de erros encontrados
 
 ---
 
 ## 🎯 Objetivo
 Praticar a criação de infraestrutura como código na AWS utilizando CloudFormation.
+
+
+##
+✍️ Autora: Ana Beatriz 
+📌 Este repositório foi criado como parte do desafio da DIO.  
+   Santander Code Girls - 2025
+
+##
+
+<a href="https://www.linkedin.com/in/ana-beatriz-m-p-ramos-936b13137/"><img src="https://img.shields.io/badge/-LinkedIn-67cb57?style=for-the-badge&logo=linkedin&logoColor=fff"></a>
