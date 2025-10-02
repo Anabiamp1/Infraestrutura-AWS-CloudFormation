@@ -12,7 +12,7 @@ Este repositório contém a prática do laboratório sobre AWS CloudFormation, c
 - [comandos](./comandos/comds) → Comandos utilizados na criação da stack
 - [images](./images) → Imagens dos estudos e prática
 - [templates](./templates/template) → Template YAML de exemplo para recursos AWS
-- [insights](./insights/Documentacao) → Reflexões, aprendizados e registro de erros encontrados
+- [insights](./insights) → Reflexões, aprendizados e registro de erros encontrados
 
 ---
 
