@@ -1,9 +1,7 @@
 # 🚀 Desafio AWS CloudFormation
 
 
-Este repositório contém a prática do laboratório sobre AWS CloudFormation, com a criação de uma stack contendo:
-- 1 bucket S3
-- 1 instância EC2
+Este repositório contém o projeto do desafio AWS CloudFormation, incluindo templates de infraestrutura, e notas técnicas. Consta como um exemplo de automatizar a criação de recursos na AWS usando CloudFormation como visto em aulas.
 
 ---
 
