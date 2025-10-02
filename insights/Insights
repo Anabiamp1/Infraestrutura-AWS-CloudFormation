@@ -1,0 +1,5 @@
+# Insights
+
+- CloudFormation permite criar recursos de forma declarativa e repetível.
+- Ao invés de criar EC2 e S3 manualmente, o template YAML automatiza tudo.
+- O `Outputs` é útil para recuperar informações importantes sem ter que procurar no console.
