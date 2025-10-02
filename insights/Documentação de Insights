@@ -1,0 +1,43 @@
+## 📒 1. Recursos Criados
+
+Durante o laboratório, configurei os seguintes recursos na AWS utilizando CloudFormation:
+
+**Bucket S3:**
+
+Criado para armazenar arquivos de forma segura e organizada.
+Nome definido como meu-bucket-dio-anabe-2025.
+
+**Instância EC2:**
+
+Tipo: t2.micro (configurável via parâmetro).
+Sistema operacional: Amazon Linux 2.
+Conectada via SSH usando uma chave .pem.
+
+**Security Group:**
+
+Permite acesso SSH (porta 22) e HTTP (porta 80) de qualquer endereço (0.0.0.0/0).
+Associado à instância EC2 para gerenciar permissões de rede.
+
+## 🛠️ 2. Configuração da Infraestrutura Automatizada
+
+- Criei um template CloudFormation (template.yaml) em YAML que descreve toda a infraestrutura.
+- Usei parâmetros para permitir flexibilidade, como o tipo de instância EC2 (InstanceType).
+- Incluí Outputs para exibir informações úteis após a criação da stack, como:
+- Nome do bucket S3.
+- ID da instância EC2.
+- Utilizei o AWS CLI para criar a stack e gerenciar recursos sem precisar usar o console gráfico.
+
+## 🧩 3. Principais Dificuldades e Como Resolvi
+
+- Rollback da stack (ROLLBACK_COMPLETE)
+- Ocorreu porque o bucket S3 já existia ou havia conflito de nomes.
+- Solução: Alterei o nome do bucket para algo único (meu-bucket-dio-anabe-2025).
+- Acesso SSH à EC2
+- Problema com permissão da chave no Windows.
+- Solução: Usei o caminho correto da chave .pem no comando ssh e removi < > do endereço IP.
+- Execução de comandos AWS CLI no Windows
+- Alguns comandos com \ não funcionavam no terminal do Windows.
+- Solução: Escrevi os comandos em uma única linha e usei o caminho do arquivo no formato C:/Users/....
+- Permissões IAM
+- Inicialmente não tinha permissões suficientes para criar roles ou políticas.
+- Solução: Pedi ao administrador da conta para associar as políticas gerenciadas:
